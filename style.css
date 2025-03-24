@@ -16,13 +16,24 @@
     }
     
     section{
-    height: 100vh;
+    height: 40vh;
     border: 1px solid grey;
     display: flex;
     justify-content: center;
     align-items: center;
     }
 
-    #SongCheck{
+    body {
         background-color: PaleGreen;
-        }
+        font-family: sans-serif;
+    }
+
+    h1 {
+      font-size: 80px;  
+    }
+
+    element{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
