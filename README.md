@@ -7,4 +7,5 @@ Libraries used:
 * PyMongo
 * scikit-learn
 * Ajax
+
 in cmd/powershell run python app.py
