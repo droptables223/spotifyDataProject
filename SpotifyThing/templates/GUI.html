@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Thing</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8T94WFtTjbrCEXSU1oBoqyLz0Z6jIw3" crossorigin="anonymous"> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    </script>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <script src="{{url_for('static', filename='/myscript.js')}}"></script>
+
+</head>
+<!-- BIG CHEESWE -->
+
+<body>
+
+    <header>
+        <form>
+            <input type="button" id="head1" class="headbutt" value="Home" onclick=home()>
+            <input type="button" id="head2" class="headbutt" value="About" onclick=about()>
+        </form>
+    </header>
+    <main id="home">
+
+        <!-- This Section holds the logo and title -->
+        <section id="Logo" class="big">
+            <div class="Container">
+                <img src="/static/SpotifyLogo.png" width="200" height="200" alt="Spotify Logo">
+            </div>
+            <h1>Spotify Genre Thing</h1> <br>
+        </section>
+        <!-- This section holds the search bar and button -->
+        <section class="stuff">
+            <form method="POST">
+                <div id="type" , class="element">
+                    <input type="search" placeholder="Search..." id="song" name="song" class="b">
+                </div>
+                <div id="but" , class="element">
+                    <input type="submit" value="Search" id="butt">
+                </div>
+            </form>
+        </section>
+
+        <script>
+
+        </script>
+
+        <section>
+            <div>
+                <h1 id="hed" class="hed">{{gen}}</h1>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th>You Might Also Like:</th>
+                    </tr>
+                    <tr>
+                        <td id="one">Example</td>
+                    </tr>
+                    <tr>
+                        <td id="two">Song</td>
+                    </tr>
+                    <tr>
+                        <td id="three">Recomendations</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+    </main>
+    <main hidden id="about">
+        <section id="sabt">
+            <a href="https://imgflip.com/i/9ouh4l"><img id="ahhhh" src="https://i.imgflip.com/9ouh4l.jpg" title="made at imgflip.com"/></a><div><a href="https://imgflip.com/memegenerator">from Imgflip Meme Generator</a></div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
