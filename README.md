@@ -9,3 +9,4 @@ Libraries used:
 * Ajax
 
 in cmd/powershell run python app.py
+wait for restart then use local host to view GUI
